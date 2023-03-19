@@ -1,0 +1,100 @@
+/* Settings - feel free to play with these */
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+/**
+ * This part should be set separately for each video
+ * if there are multiple videos in your site.
+ * I.e. '.demo-video-wrapper' is the name of this particular video
+ */
+.demo-video-wrapper {
+	background-image: url(https://d3k5xyayaartr5.cloudfront.net/_assets/home-video/beach-waves-loop.jpg);
+}
+
+/* Video overlay and content */
+.video-hero--content {
+	position: relative;
+	text-align: center;
+	color: #FFF;
+  margin: 150px 150px;
+	text-shadow: 0 0 5px rgba(0,0,0,0.9);
+  width: 50%;
+  height: 50%;
+}
+
+/* 
+a {
+	text-decoration: none;
+	color: #a46497;
+} */
+
+.page-width {
+	width: 92%;
+	max-width: 90px;
+	margin: 0 auto;
+}
+
+/* CSS from jQuery Background Video plugin */
+/**
+ * Set default positioning as a fallback for if the plugin fails
+ */
+.jquery-background-video-wrapper {
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	    	background-size: cover;
+}
+.jquery-background-video {
+	position: absolute;
+	min-width: 100%;
+	min-height: 20%;
+	width: 30px;
+	height: auto;
+	top: 100%;
+	left: 50%;
+
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	     -o-transform: translate(-50%,-50%);
+	    	transform: translate(-50%,-50%);
+}
+/**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+
+
+/**
+ * Pause/play button
+ */ 
+.jquery-background-video-pauseplay {
+	position: absolute;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	width: 20px;
+	height: 20px;
+	top: 15px;
+	right: 15px;
+	padding: 0;
+	cursor: pointer;
+	outline: none !important;
+}
+.jquery-background-video-pauseplay span {
+	display: none;
+}
+.jquery-background-video-pauseplay:after,
+.jquery-background-video-pauseplay:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-transition: all .3s ease;
+			transition: all .3s ease;
+}
